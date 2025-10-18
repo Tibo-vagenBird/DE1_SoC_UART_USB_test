@@ -1,0 +1,24 @@
+
+State Machine - |host_board_test|uart_tx:u_uart_tx|r_current_state
+Name r_current_state.STATE_END r_current_state.STATE_PARITY r_current_state.STATE_START r_current_state.STATE_IDLE r_current_state.STATE_DATA 
+r_current_state.STATE_IDLE 0 0 0 0 0 
+r_current_state.STATE_START 0 0 1 1 0 
+r_current_state.STATE_DATA 0 0 0 1 1 
+r_current_state.STATE_PARITY 0 1 0 1 0 
+r_current_state.STATE_END 1 0 0 1 0 
+
+State Machine - |host_board_test|uart_rx:u_uart_rx|r_next_state
+Name r_next_state.s_PARITY r_next_state.s_DATA r_next_state.s_START r_next_state.s_IDLE r_next_state.s_END 
+r_next_state.s_IDLE 0 0 0 0 0 
+r_next_state.s_START 0 0 1 1 0 
+r_next_state.s_DATA 0 1 0 1 0 
+r_next_state.s_PARITY 1 0 0 1 0 
+r_next_state.s_END 0 0 0 1 1 
+
+State Machine - |host_board_test|uart_rx:u_uart_rx|r_present_state
+Name r_present_state.s_PARITY r_present_state.s_DATA r_present_state.s_START r_present_state.s_IDLE r_present_state.s_END 
+r_present_state.s_IDLE 0 0 0 0 0 
+r_present_state.s_START 0 0 1 1 0 
+r_present_state.s_DATA 0 1 0 1 0 
+r_present_state.s_PARITY 1 0 0 1 0 
+r_present_state.s_END 0 0 0 1 1 

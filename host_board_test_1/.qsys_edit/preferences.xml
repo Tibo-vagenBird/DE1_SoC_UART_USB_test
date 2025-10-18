@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="Hide Interrupts">
+  <columns>
+   <connections preferredWidth="95" visible="1" />
+   <irq preferredWidth="34" visible="0" />
+   <baseaddress preferredWidth="257" visible="0" />
+   <opcodeName preferredWidth="1408" visible="0" />
+   <tags preferredWidth="106" visible="0" />
+   <endaddress preferredWidth="83" visible="0" />
+   <inputclock preferredWidth="510" />
+   <export preferredWidth="208" />
+   <description preferredWidth="191" />
+  </columns>
+ </systemtable>
+ <library expandedCategories="Project,Library" />
+ <window width="2582" height="1550" x="-11" y="-11" />
+ <generation path="uart_system_1" simulation="NONE" block_symbol_file="0" />
+</preferences>
